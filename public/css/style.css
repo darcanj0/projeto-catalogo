@@ -76,6 +76,12 @@ main nav ul a {
     color: black;
     text-decoration: none;
     justify-content: center;
+
+    transition: all .2s ease-out;
+}
+
+main nav ul a:hover{
+    transform: scale(1.3, 0.75);
 }
 
 main div.films-container{
@@ -101,6 +107,8 @@ main div.films-container article.film-card{
     background-image: url("../img/paper_3.png");
     background-blend-mode: multiply;
     box-shadow: 5px 5px 1rem black;
+
+    transition: all .2s ease-in-out;
 }
 
 main div.films-container article.film-card div#image-box{
@@ -130,6 +138,11 @@ main article.film-card div#card-info span#movie-name{
     margin-bottom: .2rem;
 }
 
+main a article.film-card:hover{
+    box-shadow: 10px 10px 1rem black;
+    transform: scale(1.05);
+}
+
 main div.card-icons{
     padding: .2rem;
     height: fit-content;
@@ -139,6 +152,12 @@ main div.card-icons{
     background-color: #d3c9b7;
     border: 2px black solid;
     border-radius: 1rem;
+
+    transition: all .2s ease-in;
+}
+
+main div.card-icons a:hover{
+    transform: scale(1.3, 0.75);
 }
 
 main div#info-card{
@@ -195,6 +214,62 @@ main div#info-card table tr:nth-child(even){
     background-color: #d3c9b7;
 }
 
+main section#form-container{
+    width: 80%;
+    margin: 2rem;
+    border: 3px black solid;
+    background-color: #d3c9b7;
+    background-image: url("../img/paper_3.png");
+    background-blend-mode: multiply;
+    text-align: center;
+    box-shadow: 5px 5px 1rem black;
+}
+
+main section#form-container legend{
+    margin: 1rem;
+    font-size: xx-large;
+}
+
+main section#form-container form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main section#form-container form label{
+    color: black;
+    font-size: x-large;
+}
+
+main section#form-container form input{
+    background-image: url("../img/paper_3.png");
+    background-blend-mode: multiply;
+    font-family: 'franchise';
+    margin: 1rem;
+    font-weight: bolder;
+    color: black;
+    font-size: large;
+    letter-spacing: .1rem;
+}
+
+main section#form-container form button{
+    font-family: 'franchise';
+    width: 30%;
+    align-self: center;
+    margin: 1rem;
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px black;
+
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+main section#form-container form button:hover{
+    background-color: #f26457f1;
+}
+
 footer{
     background-color: #f26457f1;
     background-image: url("../img/white_carbonfiber.png");
@@ -211,6 +286,12 @@ footer{
 footer a {
     text-decoration: none;
     color: black;
+
+    transition: all .2s ease-out; 
+}
+
+footer a:hover{
+    transform: scale(1.3, 0.75);
 }
 
 @media (max-height: 850px){

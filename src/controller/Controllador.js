@@ -17,6 +17,23 @@ export const getIndex = async (req, res) => {
 
 export const getRegister = (req, res) =>{
     res.render("register.ejs");
+    console.log(req.body);
+}
+
+export const postRegister = async (req, res) => {
+    console.log(req.body);
+    const {name, year, poster_link, iframe_link, duration, director, genre} = req.body;
+    try{
+        if(!name || !year || !poster_link || !iframe_link || !duration || !director || !genre){
+            res.send('All fields are required!');
+        } else {
+            // await connection.query(`INSERT INTO movies (name, year, poster_link, iframe_link, duration, director, genre) VALUES ('${name}', ${year}, '${poster_link}', '${iframe_link}', ${duration}, '${director}', '${genre}');`);
+            await moviesModel.create({name, year, poster_link, iframe_link, duration, director, genre});
+            res.redirect("/");
+        }
+    } catch (error) {
+        res.send(error.message);
+    }
 }
 
 export const getDetails = async (req, res) =>{

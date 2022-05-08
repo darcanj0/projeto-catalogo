@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/2ecee89ad8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <title>Register</title>
+    <title>CineWiki | Register</title>
 </head>
 <body>
     <%- include("./partials/header.ejs") %> 
@@ -19,7 +19,33 @@
                 <a href="/register"> <li><i class="fa-solid fa-plus"></i></li> </a>
             </ul>
         </nav>
-        <h1>Register Page</h1>
+        <section id="form-container">
+            <legend>Add a new movie</legend>
+            <form method="post" action="/register">
+                <label for="name">Film name:</label>
+                <input type="text" name="name" required>
+
+                <label for="year">Year of Release:</label>
+                <input type="number" name="year" required>
+
+                <label for="poster_link">Film poster link:</label>
+                <input type="url" name="poster_link" required>
+
+                <label for="iframe_link">Iframe Link:</label>
+                <input type="text" name="iframe_link" placeholder="Remove all quotes and html tags" required>
+
+                <label for="duration">Film duration in minutes:</label>
+                <input type="number" name="duration" required>
+
+                <label for="director">Director:</label>
+                <input type="text" name="director" required>
+
+                <label for="genre">Film genre:</label>
+                <input type="text" name="genre" required>
+
+                <button type="submit">Add</button>
+            </form>
+        </section>
     </main>
     <%- include("./partials/footer.ejs") %> 
 </body>
