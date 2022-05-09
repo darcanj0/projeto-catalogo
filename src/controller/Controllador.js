@@ -1,6 +1,8 @@
 import { connection } from "../database/connection.js";
-import {moviesModel} from "../model/movies.js"
+import {moviesModel} from "../model/movies.js";
+// import Sequelize from "sequelize";
 
+// const Op = Sequelize.Op;
 const orderById = {order: [["id", "ASC"]]}
 export const getIndex = async (req, res) => {
     try {
@@ -94,3 +96,26 @@ export const postEdit = async (req, res) => {
         res.send(error.message);
     }
 }
+
+// export const searchByName = async (req, res) => {
+//     try{
+//         const movie = await moviesModel.findAll(
+//             {
+//                 where: {name: {
+//                     [Op.like]: `%${req.body.movie}%`
+//                 }}
+//             }
+//         )
+
+//         if(movie.length == 0){
+//             alert("No movies found in this search");
+//         }
+
+//         console.log(movie);
+//         res.render("index.ejs", {
+//             moviesModel
+//         });
+//     } catch (error) {
+//         res.send(error.message)
+//     }
+// }
