@@ -45,7 +45,7 @@ export const moviesModel = connection.define('movies', {
 
 const initTable = async() => {
     try{
-        await movies.sync()
+        await moviesModel.sync()
     } catch (error){
         error.message
     }
