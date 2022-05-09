@@ -51,4 +51,4 @@ const initTable = async() => {
     }
 }
 
-initTable()
+// initTable()
