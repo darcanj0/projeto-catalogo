@@ -42,3 +42,9 @@ export const moviesModel = connection.define('movies', {
     updatedAt: false,
     timestamps: false
 });
+
+function initTable(){
+    moviesModel.async()
+}
+
+// initTable()

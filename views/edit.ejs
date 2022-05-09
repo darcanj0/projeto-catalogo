@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/2ecee89ad8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>CineWiki | Register</title>
+</head>
+<body>
+    <%- include("./partials/header.ejs") %> 
+    <main>
+        <nav>
+            <ul>
+                <a href="/"> <li><i class="fa-solid fa-house"></i></li></a>
+                <a href="/register"> <li><i class="fa-solid fa-plus"></i></li> </a>
+            </ul>
+        </nav>
+        <section id="form-container">
+            <legend>Editing: <%= currentFilm.name %> </legend>
+            <form method="post" action="/edit/<%= currentFilm.id %>">
+                <label for="name">Film name:</label>
+                <input type="text" name="name" required value="<%= currentFilm.name %>">
+
+                <label for="year">Year of Release:</label>
+                <input type="number" name="year" required value="<%= currentFilm.year %>">
+
+                <label for="poster_link">Film poster link:</label>
+                <input type="url" name="poster_link" required value="<%= currentFilm.poster_link %>">
+
+                <label for="iframe_link">Iframe Link:</label>
+                <input type="text" name="iframe_link" placeholder="Remove all quotes and html tags" required value="<%= currentFilm.iframe_link %>">
+
+                <label for="duration">Film duration in minutes:</label>
+                <input type="number" name="duration" required value="<%= currentFilm.duration %>">
+
+                <label for="director">Director:</label>
+                <input type="text" name="director" required value="<%= currentFilm.director %>">
+
+                <label for="genre">Film genre:</label>
+                <input type="text" name="genre" required value="<%= currentFilm.genre %>">
+
+                <button type="submit">Edit</button>
+            </form>
+        </section>
+    </main>
+    <%- include("./partials/footer.ejs") %> 
+</body>
+</html>

@@ -61,3 +61,35 @@ export const getDelete = async (req, res) => {
         res.send(error.message)
     }
 }
+
+export const getEdit = async (req, res) => {
+    try{
+        const currentFilm = await moviesModel.findByPk(req.params.id);
+        res.render("edit.ejs", {currentFilm});
+    } catch(error){
+        res.send(error.message)
+    }
+}
+
+export const postEdit = async (req, res) => {
+    try{
+        const {name, year, poster_link, iframe_link, duration, director, genre} = req.body;
+        // await connection.query(`UPDATE movies SET...`)
+        await moviesModel.update({
+            name: name,
+            year: year,
+            poster_link: poster_link,
+            iframe_link: iframe_link,
+            duration: duration,
+            director: director,
+            genre: genre
+        }, {
+            where: {
+                id : req.params.id
+            }
+        })
+        res.redirect("/");
+    } catch (error){
+        res.send(error.message);
+    }
+}
