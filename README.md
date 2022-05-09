@@ -1,4 +1,7 @@
+<head>
 <script src="https://kit.fontawesome.com/2ecee89ad8.js" crossorigin="anonymous"></script>
+</head>
+
 # projeto-catalogo
 
 ## Description
