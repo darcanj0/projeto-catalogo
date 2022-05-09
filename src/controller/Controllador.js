@@ -1,13 +1,14 @@
 import { connection } from "../database/connection.js";
 import {moviesModel} from "../model/movies.js"
 
+const orderById = {order: [["id", "ASC"]]}
 export const getIndex = async (req, res) => {
     try {
         //const moviesList = await connection.query('SELECT * FROM movies',{
         //model: movies
         // })
         // console.log(moviesList)
-        const movieList = await moviesModel.findAll();
+        const movieList = await moviesModel.findAll(orderById);
         console.log(movieList);
         res.render("index.ejs", {movieList});
     } catch (error){
@@ -25,7 +26,7 @@ export const postRegister = async (req, res) => {
     const {name, year, poster_link, iframe_link, duration, director, genre} = req.body;
     try{
         if(!name || !year || !poster_link || !iframe_link || !duration || !director || !genre){
-            res.send('All fields are required!');
+            res.send("You must fill all the form fields");
         } else {
             // await connection.query(`INSERT INTO movies (name, year, poster_link, iframe_link, duration, director, genre) VALUES ('${name}', ${year}, '${poster_link}', '${iframe_link}', ${duration}, '${director}', '${genre}');`);
             await moviesModel.create({name, year, poster_link, iframe_link, duration, director, genre});
