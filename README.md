@@ -1,7 +1,3 @@
-<head>
-<script src="https://kit.fontawesome.com/2ecee89ad8.js" crossorigin="anonymous"></script>
-</head>
-
 # projeto-catalogo
 
 ## Description
@@ -13,9 +9,9 @@ The tools used in this project are:
 
 
 <section style:'display:flex';flex-wrap:wrap;">
-    <i class="fa-brands fa-node"></i>
-    <i class="fa-brands fa-css3"></i>
-    <i class="fa-brands fa-html5"></i>
+    <img src = "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg">
+    <img src="https://img.icons8.com/color/144/000000/css3.png"/>
+    <img src="https://img.icons8.com/color/144/000000/html-5--v1.png"/>
     <img src="https://img.icons8.com/color/144/000000/postgreesql.png"/>
     <img src = "https://process.filestackapi.com/cache=expiry:max/resize=width:700/TyzZKw86QzSElYK6bfXK" style = 'height: 140px'>
     <img src = "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" style = 'height: 140px'>
