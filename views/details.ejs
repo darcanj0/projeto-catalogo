@@ -21,7 +21,16 @@
         </nav>
         <div id="info-card">
             <h2><%= filmDetails.name %></h2>
-            <div class="iframe-frame"><iframe <%= filmDetails.iframe_link %> ></iframe></div>
+            <div class="iframe-frame">
+                <iframe 
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/<%= filmDetails.iframe_link %>"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
             <table>
                 <thead>
                     <th colspan="2">Details</th>
