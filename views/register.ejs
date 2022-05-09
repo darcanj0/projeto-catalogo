@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/2ecee89ad8.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>CineWiki | Register</title>
 </head>
 <body>
@@ -47,6 +47,17 @@
             </form>
         </section>
     </main>
-    <%- include("./partials/footer.ejs") %> 
+    <%- include("./partials/footer.ejs") %>
+    <% if (toggle) { %>
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: 'Your film was added!',
+                timer: 3000
+            })
+            setInterval(() => {window.location.href = '/'}, 3000)
+        </script>
+    <% } %>
 </body>
 </html>
