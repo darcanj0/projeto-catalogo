@@ -1,7 +1,7 @@
 import Sequelize from "sequelize";
 import {connection} from "../database/connection.js";
 
-const moviesModel = connection.define('movies', {
+export const moviesModel = connection.define('movies', {
     id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -48,5 +48,3 @@ const initTable = async() =>{
 }
 
 initTable()
-
-module.exports = moviesModel;
