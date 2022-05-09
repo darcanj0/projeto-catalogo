@@ -44,7 +44,11 @@ export const moviesModel = connection.define('movies', {
 });
 
 const initTable = async() =>{
-    moviesModel.sync()
+    try{
+        await filmes.sync()
+    } catch (error){
+        error.message
+    }
 }
 
 initTable()
