@@ -32,7 +32,7 @@ export const postRegister = async (req, res) => {
         } else {
             // await connection.query(`INSERT INTO movies (name, year, poster_link, iframe_link, duration, director, genre) VALUES ('${name}', ${year}, '${poster_link}', '${iframe_link}', ${duration}, '${director}', '${genre}');`);
             await moviesModel.create({name, year, poster_link, iframe_link, duration, director, genre});
-            res.render("/register", {toggle: true});
+            res.render("register.ejs", {toggle: true});
         }
     } catch (error) {
         res.send(error.message);
