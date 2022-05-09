@@ -22,5 +22,4 @@ The tools used in this project are:
 ## Contact
 <a href = "https://linkedin.com/in/darcanjoo/"><img src = "https://cdn-icons-png.flaticon.com/512/174/174857.png" style = 'height: 70px'></a>
 <br>
-<a href = "https://github.com/darcanj0"><img src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner.png" style = 'height: 70px'></a>
 <p>My email: daniel.thomas.aarcanjo@gmail.com</p>
