@@ -152,7 +152,9 @@ main div.card-icons{
     background-color: #d3c9b7;
     border: 2px black solid;
     border-radius: 1rem;
+}
 
+main div.card-icons a{
     transition: all .2s ease-in;
 }
 
