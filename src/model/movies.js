@@ -43,13 +43,6 @@ export const moviesModel = connection.define('movies', {
     timestamps: false
 });
 
-<<<<<<< HEAD
-const initTable = async() =>{
-    moviesModel.sync()
-};
-
-initTable();
-=======
 const initTable = async() => {
     try{
         await filmes.sync()
@@ -59,4 +52,3 @@ const initTable = async() => {
 }
 
 initTable()
->>>>>>> 7c460a136963f7b1c1410c5bff9eb5cc0f3c2c06
