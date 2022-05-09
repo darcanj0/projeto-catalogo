@@ -178,6 +178,10 @@ main div#info-card{
     text-align: center;
 }
 
+main div#info-card h2{
+    margin: .5rem;
+}
+
 main div#info-card div.iframe-frame{
     position: relative;
     overflow: hidden;
@@ -212,7 +216,7 @@ main div#info-card table tr:nth-child(even){
     background-color: #d3c9b7;
 }
 
-main section#form-container{
+section#form-container{
     width: 80%;
     margin: 2rem;
     border: 3px black solid;
@@ -223,23 +227,23 @@ main section#form-container{
     box-shadow: 5px 5px 1rem black;
 }
 
-main section#form-container legend{
+section#form-container legend{
     margin: 1rem;
     font-size: xx-large;
 }
 
-main section#form-container form{
+section#form-container form{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-main section#form-container form label{
+section#form-container form label{
     color: black;
     font-size: x-large;
 }
 
-main section#form-container form input{
+section#form-container form input{
     background-image: url("../img/paper_3.png");
     background-blend-mode: multiply;
     font-family: 'franchise';
@@ -250,7 +254,7 @@ main section#form-container form input{
     letter-spacing: .1rem;
 }
 
-main section#form-container form button{
+section#form-container form button{
     font-family: 'franchise';
     width: 30%;
     align-self: center;
@@ -264,7 +268,7 @@ main section#form-container form button{
     transition: all .2s ease-out;
 }
 
-main section#form-container form button:hover{
+section#form-container form button:hover{
     background-color: #f26457f1;
 }
 
