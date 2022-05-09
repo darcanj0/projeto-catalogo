@@ -20,7 +20,7 @@ The tools used in this project are:
 </section>
 
 ## Contact
-<a href = "https://linkedin.com/in/darcanjoo/">My Linkedin</a>
+<a href = "https://linkedin.com/in/darcanjoo/"><img src = "https://cdn-icons-png.flaticon.com/512/174/174857.png" style = 'height: 70px'></a>
 <br>
-<a href = "https://github.com/darcanj0">My Github</a>
+<a href = "https://github.com/darcanj0"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style = 'height: 70px'></a>
 <p>My email: daniel.thomas.aarcanjo@gmail.com</p>
