@@ -47,4 +47,4 @@ function initTable(){
     moviesModel.async()
 }
 
-// initTable()
+initTable()
