@@ -1,12 +1,16 @@
 # projeto-catalogo
 
+## Link
+https://cinewiki-darcanj0.onrender.com
+
 ## Description
 This project has educational purposes and it was developed in the second module
 of my fullstack Web Development course at BlueEdTech in 05/2022.
+The goal was to develop a catalog, which data would be stored in a real database using postgreSQL. I chose to make a film catalog.
+About the routes, we had to make one for displaying all items, one for the item details, one for adding a new item, and also for editing and deleting the item.
 
 ## Stacks
 The tools used in this project are:
-
 
 <section>
     <img src = "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" style = 'height: 140px'>
